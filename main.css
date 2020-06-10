@@ -1,0 +1,55 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 400px;
+	background-color: #211e1f;
+
+}
+
+.equalizer {
+	display: flex;
+	justify-content: space-between;
+	width: 80px;
+	height: 80px;
+	flex-direction: row;
+  	align-items: flex-end;
+}
+
+.equalizer_item {
+	width: 10px;
+	height: 5px;
+	background-color: #ff01b1;
+	
+	animation-name: equalizer_play;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item_1 {
+	animation-duration: 1s;
+}
+.item_2 {
+	animation-duration: 0.65s;
+}
+.item_3 {
+	animation-duration: 0.75s;
+}
+.item_4 {
+	animation-duration: 0.5s;
+}
+.item_5 {
+	animation-duration: 0.8s;
+}
+
+
+@keyframes equalizer_play {
+	0% {
+		height: 5px;
+	}
+	100% {
+		height: 80px;
+
+	}
+}
